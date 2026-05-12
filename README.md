@@ -22,12 +22,20 @@
 
         <section id="analogy">
             <h2>The Rubber Sheet Analogy</h2>
-            <p>Imagine a trampoline stretched tight. If you place a heavy bowling ball (The Sun) in the middle, it creates a dip or "well."</p>
-            <ul>
-                <li><strong>Curvature:</strong> The curve of the trampoline represents gravity.</li>
-                <li><strong>Orbits:</strong> If you flick a marble (The Earth) across the sheet, it will roll around the dip created by the bowling ball.</li>
-            </ul>
+            <p>Imagine a trampoline stretched tight. If you place a heavy object in the middle, it creates a dip. While this helps us visualize "warped space," it is important to understand its limits.</p>
             
+            <!-- Image Embedding -->
+            <div class="image-container">
+                <img src="image_d3d490.png" alt="Rubber Sheet Spacetime Analogy" class="content-image">
+                <p class="caption">
+                    <em>Figure 1: A visualization of the rubber sheet analogy. Source: Adapted from concepts discussed in "Relativity Shock: Experiments Reveal that Deformed Rubber Sheet is Not Like Spacetime" (The Physics arXiv Blog, 2013).</em>
+                </p>
+            </div>
+
+            <div class="critical-thinking">
+                <h3>A Note for Students: Is this analogy perfect?</h3>
+                <p>According to researchers, the rubber sheet can be misleading because it relies on Earth's gravity to pull the ball down to create the curve. In the real universe, the curvature <strong>is</strong> the gravity. Furthermore, space is three-dimensional, not a flat sheet!</p>
+            </div>
         </section>
 
         <section id="consequences">
