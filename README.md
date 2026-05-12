@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,40 +6,6 @@
     <title>Spacetime Curvature - General Relativity</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-/* Image Styling */
-.image-container {
-    text-align: center;
-    margin: 20px 0;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 10px;
-}
-
-.content-image {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #3498db;
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(52, 152, 219, 0.3);
-}
-
-.caption {
-    font-size: 0.9rem;
-    color: #bdc3c7;
-    margin-top: 10px;
-    line-height: 1.4;
-}
-
-/* Critical Thinking Box */
-.critical-thinking {
-    background: #16213e;
-    border-left: 4px solid #e74c3c; /* Red highlight to signal caution/critical thought */
-    padding: 15px;
-    margin-top: 20px;
-    font-style: italic;
-}
-
 <body>
 
     <header>
@@ -55,22 +21,25 @@
         </section>
 
         <section id="analogy">
-            <h2>The Rubber Sheet Analogy</h2>
-            <p>Imagine a trampoline stretched tight. If you place a heavy object in the middle, it creates a dip. While this helps us visualize "warped space," it is important to understand its limits.</p>
-            
-            <!-- Image Embedding -->
-            <div class="image-container">
-                <img src="image_d3d490.png" alt="Rubber Sheet Spacetime Analogy" class="content-image">
-                <p class="caption">
-                    <em>Figure 1: A visualization of the rubber sheet analogy. Source: Adapted from concepts discussed in "Relativity Shock: Experiments Reveal that Deformed Rubber Sheet is Not Like Spacetime" (The Physics arXiv Blog, 2013).</em>
-                </p>
-            </div>
+    <h2>The Rubber Sheet Analogy</h2>
+    <p>While often used to visualize gravity, it is important to understand how this model relates to actual spacetime geometry.</p>
+    
+    <!-- Image Embedding -->
+    <figure class="diagram-container">
+        <img src="image_d2e4cc.png" alt="Curved Spacetime Diagram" class="responsive-diagram">
+        <figcaption>
+            <em>Figure 1: Visualization of mass deforming a spacetime grid. Source: 
+            <a href="https://medium.com/the-physics-arxiv-blog/relativity-shock-experiments-reveal-that-deformed-rubber-sheet-is-not-like-spacetime-b8566ba5a110" target="_blank">
+            The Physics arXiv Blog</a>.</em>
+        </figcaption>
+    </figure>
 
-            <div class="critical-thinking">
-                <h3>A Note for Students: Is this analogy perfect?</h3>
-                <p>According to researchers, the rubber sheet can be misleading because it relies on Earth's gravity to pull the ball down to create the curve. In the real universe, the curvature <strong>is</strong> the gravity. Furthermore, space is three-dimensional, not a flat sheet!</p>
-            </div>
-        </section>
+    <div class="theory-note">
+        <strong>Critique of the Model:</strong> Research suggests that while a deformed rubber sheet 
+        is a common teaching tool, it is not an exact representation of spacetime, as it relies 
+        on external gravity to create the "dip" in the sheet.
+    </div>
+</section>
 
         <section id="consequences">
             <h2>Why This Matters</h2>
