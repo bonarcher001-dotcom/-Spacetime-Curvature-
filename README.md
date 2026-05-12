@@ -26,8 +26,7 @@
     
     <!-- Image Embedding -->
     <figure class="diagram-container">
-        <img src="image_d2e4cc.png" alt="Curved Spacetime Diagram" class="responsive-diagram">
-        <figcaption>
+<img src="rubber sheet analogy.jpeg" alt="Rubber sheet analogy of spacetime curvature" width="600">        <figcaption>
             <em>Figure 1: Visualization of mass deforming a spacetime grid. Source: 
             <a href="https://medium.com/the-physics-arxiv-blog/relativity-shock-experiments-reveal-that-deformed-rubber-sheet-is-not-like-spacetime-b8566ba5a110" target="_blank">
             The Physics arXiv Blog</a>.</em>
