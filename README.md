@@ -6,6 +6,40 @@
     <title>Spacetime Curvature - General Relativity</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+/* Image Styling */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.3);
+}
+
+.caption {
+    font-size: 0.9rem;
+    color: #bdc3c7;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+/* Critical Thinking Box */
+.critical-thinking {
+    background: #16213e;
+    border-left: 4px solid #e74c3c; /* Red highlight to signal caution/critical thought */
+    padding: 15px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
 <body>
 
     <header>
