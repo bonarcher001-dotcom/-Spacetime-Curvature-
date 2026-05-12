@@ -1,68 +1,112 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spacetime Curvature - General Relativity</title>
-    <link rel="stylesheet" href="style.css">
+    <title>The Geometry of Gravity | Spacetime Curvature</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background-color: #0b0d17;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to bottom, #1a1c2c, #0b0d17);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .content-section {
+            margin-bottom: 3rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            display: block;
+            margin: 1.5rem auto;
+        }
+        .citation {
+            font-size: 0.85rem;
+            color: #888;
+            text-align: center;
+            margin-top: -1rem;
+            margin-bottom: 2rem;
+        }
+        .citation a {
+            color: #4a9eff;
+            text-decoration: none;
+        }
+        .citation a:hover {
+            text-decoration: underline;
+        }
+        .math-block {
+            background: #161b22;
+            padding: 1.5rem;
+            border-radius: 6px;
+            text-align: center;
+            border-left: 4px solid #4a9eff;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <h1>Spacetime Curvature</h1>
-        <p>Gravity is Geometry</p>
-    </header>
+<header>
+    <h1>The Curvature of Spacetime</h1>
+    <p>Understanding Gravity through General Relativity</p>
+</header>
 
-    <main>
-        <section id="fabric">
-            <h2>The Fabric of the Universe</h2>
-            <p>In 1915, Albert Einstein proposed that space and time are not separate, but are woven together into a single four-dimensional fabric called <strong>spacetime</strong>.</p>
-            <p>Matter and energy tell spacetime how to curve, and curved spacetime tells matter how to move.</p>
-        </section>
+<div class="container">
+    <section class="content-section">
+        <h2>Matter Tells Space How to Curve</h2>
+        <p>
+            In 1915, Albert Einstein proposed that gravity is not an invisible force pulling objects toward each other. Instead, it is the <strong>warping of space and time</strong> (spacetime) caused by mass and energy. 
+        </p>
+        
+        <!-- Image and Citation -->
+        <figure>
+            <img src="rubber sheet analogy.jpeg" alt="The rubber sheet analogy showing Earth curving the grid of spacetime">
+            <figcaption class="citation">
+                Source: <a href="https://medium.com/the-physics-arxiv-blog/relativity-shock-experiments-reveal-that-deformed-rubber-sheet-is-not-like-spacetime-b8566ba5a110" target="_blank">The Physics arXiv Blog via Medium</a>
+            </figcaption>
+        </figure>
 
-        <section id="analogy">
-    <h2>The Rubber Sheet Analogy</h2>
-    <p>While often used to visualize gravity, it is important to understand how this model relates to actual spacetime geometry.</p>
-    
-    <!-- Image Embedding -->
-    <figure class="diagram-container">
-<img src="rubber sheet analogy.jpeg" alt="Rubber sheet analogy of spacetime curvature" width="600">        <figcaption>
-            <em>Figure 1: Visualization of mass deforming a spacetime grid. Source: 
-            <a href="https://medium.com/the-physics-arxiv-blog/relativity-shock-experiments-reveal-that-deformed-rubber-sheet-is-not-like-spacetime-b8566ba5a110" target="_blank">
-            The Physics arXiv Blog</a>.</em>
-        </figcaption>
-    </figure>
+        <p>
+            While the "rubber sheet" analogy shown above is the most famous way to visualize this, physicists often point out its limitations. In reality, spacetime is a four-dimensional manifold, and curvature affects the motion of objects by dictating the paths (geodesics) they follow.
+        </p>
+    </section>
 
-    <div class="theory-note">
-        <strong>Critique of the Model:</strong> Research suggests that while a deformed rubber sheet 
-        is a common teaching tool, it is not an exact representation of spacetime, as it relies 
-        on external gravity to create the "dip" in the sheet.
-    </div>
-</section>
+    <section class="content-section">
+        <h2>The Einstein Field Equations</h2>
+        <p>
+            The relationship between matter and geometry is mathematically described by the Einstein Field Equations. These equations relate the local spacetime curvature with the local energy and momentum within that spacetime:
+        </p>
+        <div class="math-block">
+            <!-- Using the math placeholder for standard physics notation -->
+            $G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}$
+        </div>
+    </section>
 
-        <section id="consequences">
-            <h2>Why This Matters</h2>
-            <p>Spacetime curvature explains phenomena that classical physics couldn't, such as:</p>
-            <table>
-                <tr>
-                    <th>Phenomenon</th>
-                    <th>Explanation</th>
-                </tr>
-                <tr>
-                    <td><strong>Gravitational Lensing</strong></td>
-                    <td>Light follows the curves of space, so it bends when passing near massive objects.</td>
-                </tr>
-                <tr>
-                    <td><strong>Time Dilation</strong></td>
-                    <td>Time actually moves slower in areas of high curvature (stronger gravity).</td>
-                </tr>
-            </table>
-        </section>
-    </main>
-
-    <footer>
-        <p>Created by CHMSU TALISAY BSED SCIENCE - 3A &copy; 2026</p>
-    </footer>
+    <section class="content-section">
+        <h2>Space Tells Matter How to Move</h2>
+        <p>
+            Objects in motion follow the straightest possible path through curved spacetime. From our perspective, these paths look like orbits or the downward acceleration of a falling apple, but in the four-dimensional geometry of the universe, these objects are simply following the natural "slope" of the cosmos.
+        </p>
+    </section>
+</div>
 
 </body>
 </html>
