@@ -29,7 +29,7 @@
         }
 
         header {
-            height: 60vh;
+            height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -113,30 +113,34 @@
 
     <header>
         <h1>Spacetime</h1>
-        <p style="font-size: 1.5rem;">Gravity is the geometry of the universe.</p>
-        <button onclick="document.getElementById('learn').scrollIntoView({behavior: 'smooth'})">Start Learning</button>
+        <p style="font-size: 1.5rem;">The fabric of the universe is not a void; it’s a stage.</p>
+        <button onclick="document.getElementById('learn').scrollIntoView({behavior: 'smooth'})">Begin the Journey</button>
     </header>
 
     <div class="container" id="learn">
         <section class="card">
             <h2>The Fabric of Reality</h2>
-            <p>Think of space and time not as separate things, but as a single four-dimensional fabric. When a massive object like a star sits in this fabric, it creates a "dent." This dent is what we feel as <span class="highlight">gravity</span>.</p>
+            <p>In 1915, Albert Einstein realized that space and time are linked in a four-dimensional fabric called <span class="highlight">spacetime</span>. Gravity isn't just a "pull" between objects; it is the warping of this fabric caused by mass.</p>
+            <blockquote>"Matter tells space how to curve; space tells matter how to move." — John Wheeler</blockquote>
         </section>
 
         <section class="card">
-            <h2>The Rubber Sheet Analogy</h2>
-            <p>This is the most famous way to visualize general relativity. A heavy mass (the Sun) curves the grid, and smaller objects (planets) follow those curves.</p>
+            <h2>The Trampoline Analogy</h2>
+            <p>Think of placing a bowling ball on a trampoline. The fabric dips. If you roll a marble nearby, it won't move in a straight line—it will follow the <span class="highlight">curve</span> created by the bowling ball. This is exactly how planets orbit stars.</p>
             
             <div class="visual-aid">
-                <!-- Corrected Image Tag -->
-                <img src="http://googleusercontent.com/image_collection/image_retrieval/93100428583492945" alt="Spacetime rubber sheet analogy diagram">
-                <p style="color: #03dac6; font-size: 0.9rem; margin-top: 15px;">Diagram: How mass creates curvature in the spacetime grid.</p>
+                <!-- *** REPLACED NON-WORKING LINK WITH GENERATED IMAGE *** -->
+                <img src="Comprehensive_Spacetime_Visualization_Diagram.png" alt="Comprehensive visual diagram explaining spacetime curvature, time dilation, and gravitational lensing, integrated into the dark-mode website theme.">
+                <p style="color: #03dac6; font-size: 0.9rem; margin-top: 15px;">A full visual explanation of the Trampoline Analogy.</p>
             </div>
         </section>
 
         <section class="card">
-            <h2>Why This Matters</h2>
-            <p>Without understanding this curvature, our technology wouldn't work. For example, <strong>GPS satellites</strong> have to account for the fact that time moves slightly differently in the "curved" space near Earth compared to deep space!</p>
+            <h2>Real-World Proof</h2>
+            <ul>
+                <li><strong>Gravitational Lensing:</strong> Light from distant stars bends as it passes near the Sun.</li>
+                <li><strong>GPS Correction:</strong> Clocks on satellites move slightly faster than those on Earth because they are further from the Earth's "dent" in spacetime.</li>
+            </ul>
         </section>
     </div>
 
