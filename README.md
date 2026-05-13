@@ -66,25 +66,19 @@
             font-weight: bold;
         }
 
-        /* Interactive Element Placeholder (modified to hold SVG) */
-        .simulation-box {
+        /* Container for the image */
+        .visual-aid {
             width: 100%;
-            background: #000;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px dashed #3a3a5e;
-            cursor: pointer;
-            transition: 0.3s;
             margin-top: 20px;
-            padding: 20px;
-            box-sizing: border-box;
+            text-align: center;
         }
 
-        .simulation-box:hover {
-            border-color: #6200ea;
-            background: #0a0a1a;
+        .visual-aid img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
         footer {
@@ -103,13 +97,6 @@
             font-size: 1rem;
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(98, 0, 234, 0.3);
-        }
-
-        /* SVG Specific Styling */
-        svg {
-            width: 100%;
-            height: auto;
-            max-width: 800px; /* Optional cap */
         }
     </style>
 </head>
@@ -131,69 +118,13 @@
         </section>
 
         <section class="card">
-            <h2>The Trampoline Analogy</h2>
-            <p>Imagine placing a bowling ball on a trampoline. The fabric dips. If you roll a marble nearby, it won't move in a straight line—it will follow the <span class="highlight">curve</span> created by the bowling ball. This is exactly how planets orbit stars.</p>
+            <h2>The Rubber Sheet Analogy</h2>
+            <p>Imagine placing a heavy ball on a rubber sheet. The sheet stretches and curves. If you roll a smaller ball nearby, it rolls toward the center because of the <span class="highlight">shape</span> of the sheet, not because of an invisible force. This is our best mental model for how mass affects the universe.</p>
             
-            <div class="simulation-box">
-                <!-- Inline SVG Visualization -->
-                <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Background Grid -->
-                    <defs>
-                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(100, 100, 255, 0.3)" stroke-width="1"/>
-                        </pattern>
-                    </defs>
-                    <rect width="800" height="500" fill="url(#grid)" />
-
-                    <!-- Distorted Mesh Central Dip -->
-                    <path d="M 0 250 Q 200 250 350 350 L 450 350 Q 600 250 800 250" fill="none" stroke="rgba(100, 100, 255, 0.6)" stroke-width="2"/>
-                    <path d="M 400 0 L 400 150 Q 400 350 400 500" fill="none" stroke="rgba(100, 100, 255, 0.6)" stroke-width="2"/>
-                    <ellipse cx="400" cy="350" rx="150" ry="80" fill="none" stroke="rgba(100, 100, 255, 0.6)" stroke-width="2" transform="rotate(-15 400 350)"/>
-                    
-                    <!-- Massive Object (Bowling Ball) -->
-                    <circle cx="400" cy="350" r="60" fill="#202020" stroke="#03dac6" stroke-width="4"/>
-                    
-                    <!-- Labels -->
-                    <text x="400" y="355" font-family="Segoe UI" font-size="16" fill="white" text-anchor="middle">Mass (Sun)</text>
-                    <text x="250" y="220" font-family="Segoe UI" font-size="14" fill="#a0a0c0">Space-Time Grid (Rubber Sheet)</text>
-                    
-                    <!-- Distortion Callout -->
-                    <line x1="330" y1="360" x2="280" y2="420" stroke="white" stroke-width="1" marker-end="url(#arrowhead)"/>
-                    <text x="280" y="440" font-family="Segoe UI" font-size="14" fill="white" text-anchor="middle">Curvature</text>
-
-                    <!-- Test Mass Path -->
-                    <circle cx="100" cy="200" r="8" fill="#e0e0e0"/>
-                    <path d="M 100 200 C 200 200, 300 300, 380 345" fill="none" stroke="white" stroke-width="2" stroke-dasharray="5,5"/>
-                    <text x="90" y="185" font-family="Segoe UI" font-size="14" fill="#e0e0e0">Test Mass (e.g., Planet)</text>
-                    
-                    <!-- Test Mass Velocity Arrow -->
-                    <line x1="108" y1="200" x2="160" y2="200" stroke="#03dac6" stroke-width="2" marker-end="url(#arrowhead-green)"/>
-                    
-                    <!-- Comparison Insets -->
-                    <g transform="translate(600, 50) scale(0.6)">
-                        <rect width="250" height="150" fill="#000" stroke="rgba(255, 255, 255, 0.1)" stroke-width="2"/>
-                        <rect width="250" height="150" fill="url(#grid)" />
-                        <line x1="20" y1="75" x2="230" y2="75" stroke="#e0e0e0" stroke-width="2" stroke-dasharray="5,5"/>
-                        <text x="125" y="165" font-family="Segoe UI" font-size="20" fill="white" text-anchor="middle">Flat Space (Empty)</text>
-                    </g>
-                    <g transform="translate(600, 250) scale(0.6)">
-                        <rect width="250" height="150" fill="#000" stroke="rgba(255, 255, 255, 0.1)" stroke-width="2"/>
-                        <rect width="250" height="150" fill="url(#grid)" />
-                        <path d="M 20 75 Q 125 125 230 75" fill="none" stroke="#e0e0e0" stroke-width="2" stroke-dasharray="5,5"/>
-                        <text x="125" y="165" font-family="Segoe UI" font-size="20" fill="white" text-anchor="middle">Curved Space (Near Mass)</text>
-                    </g>
-
-                    <!-- Definitions for Arrows -->
-                    <defs>
-                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-                            <polygon points="0 0, 10 3.5, 0 7" fill="white"/>
-                        </marker>
-                        <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-                            <polygon points="0 0, 10 3.5, 0 7" fill="#03dac6"/>
-                        </marker>
-                    </defs>
-                </svg>
-                <p style="text-align: center; color: #777; margin-top: 10px;">Visualize Mass vs. Curvature (Click to interact, once enabled)</p>
+            <div class="visual-aid">
+                <!-- Image retrieved from the internet -->
+                http://googleusercontent.com/image_collection/image_retrieval/7126862456529068090_0
+                <p style="text-align: center; color: #777; margin-top: 10px;">Visualizing mass warping the spacetime grid.</p>
             </div>
         </section>
 
@@ -205,6 +136,13 @@
             </ul>
         </section>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Cosmic Education Project</p>
+    </footer>
+
+</body>
+</html>
 
     <footer>
         <p>&copy; 2026 Cosmic Education Project</p>
