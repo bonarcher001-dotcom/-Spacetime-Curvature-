@@ -19,6 +19,8 @@
             <p>Matter and energy tell spacetime how to curve, and curved spacetime tells matter how to move.</p>
         </section>
 
+<img src="https://theory.uwinnipeg.ca/users/gabor/black_holes/images/slide5.gif" alt="rubber">
+
         <section id="analogy">
             <h2>The Rubber Sheet Analogy</h2>
             <p>Imagine a trampoline stretched tight. If you place a heavy bowling ball (The Sun) in the middle, it creates a dip or "well."</p>
